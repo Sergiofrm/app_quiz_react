@@ -2,13 +2,9 @@
   "name": "quiz_sc",
   "private": true,
   "version": "1.0.0",
-  "main": "index.html",
   "type": "module",
-  "engines": {
-    "node": "16.X"
-  },
+
   "scripts": {
-    "start": "node server.js",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
