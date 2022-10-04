@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+src/*
+public/*
+build/static/css/*.map
+build/static/js/*.map
