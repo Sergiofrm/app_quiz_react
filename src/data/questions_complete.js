@@ -3,31 +3,32 @@ const data = [
     category: 'SEPARAÇÃO',
     questions: [
       {
-        question: 'Qual tag cria um parágrafo?',
-        options: ['<p>', '<h1>', '<text>', '<ul>'],
-        answer: '<p>',
+        question: 'Adiconar perguntar sobre SEPARAÇÃO',
+        options: ['separação1', 'separação2', 'separação3', 'separação4'],
+        answer: 'separação1',
         tip: 'É uma tag de uma letra apenas'
       },
       {
-        question: 'Qual atributo adiciona um link para a tag a?',
-        options: ['alt', 'href', 'src', 'link'],
-        answer: 'href',
-        tip: 'Hyperlink Reference'
+        question: 'Adiconar perguntar sobre SEPARAÇÃO',
+        options: ['separação1', 'separação2', 'separação3', 'separação4'],
+        answer: 'separação1',
+        tip: 'É uma tag de uma letra apenas'
       },
       {
-        question: 'As listas não ordenadas tem a tag de:',
-        options: ['<ol>', '<ul>', '<li>', '<list>'],
-        answer: '<ul>'
+        question: 'Adiconar perguntar sobre SEPARAÇÃO',
+        options: ['separação1', 'separação2', 'separação3', 'separação4'],
+        answer: 'separação1',
+        tip: 'É uma tag de uma letra apenas'
       },
       {
-        question: 'Qual atributo deixa o input obrigatório?',
-        options: ['placeholder', 'value', 'required', 'maxlength'],
-        answer: 'required'
+        question: 'Adiconar perguntar sobre SEPARAÇÃO',
+        options: ['separação1', 'separação2', 'separação3', 'separação4'],
+        answer: 'separação1'
       },
       {
-        question: 'A tag semântica indicada para rodapés é a:',
-        options: ['div', 'main', 'section', 'footer'],
-        answer: 'footer'
+        question: 'Adiconar perguntar sobre SEPARAÇÃO',
+        options: ['separação1', 'separação2', 'separação3', 'separação4'],
+        answer: 'separação1'
       }
     ]
   },
@@ -35,20 +36,37 @@ const data = [
     category: 'REABASTECIMENTO',
     questions: [
       {
-        question: 'Qual regra altera a cor de um elemento?',
-        options: ['color', 'background-color', 'font-size', 'transition'],
-        answer: 'color',
+        question: 'Adiconar perguntar sobre REABASTECIMENTO',
+        options: [
+          'reabastecimento1',
+          'reabastecimento2',
+          'reabastecimento3',
+          'reabastecimento4'
+        ],
+        answer: 'reabastecimento4',
         tip: 'Cor em inglês'
       },
       {
-        question: 'Para aumentar a fonte de um elemento utilizamos:',
-        options: ['font', 'text-transform', 'font-size', 'hover'],
-        answer: 'font-size'
+        question: 'Adiconar perguntar sobre REABASTECIMENTO',
+        options: [
+          'reabastecimento1',
+          'reabastecimento2',
+          'reabastecimento3',
+          'reabastecimento4'
+        ],
+        answer: 'reabastecimento2',
+        tip: 'Cor em inglês'
       },
       {
-        question: 'A posição que deixa um elemento fixo é a:',
-        options: ['static', 'absolute', 'fixed', 'relative'],
-        answer: 'fixed'
+        question: 'Adiconar perguntar sobre REABASTECIMENTO',
+        options: [
+          'reabastecimento1',
+          'reabastecimento2',
+          'reabastecimento3',
+          'reabastecimento4'
+        ],
+        answer: 'reabastecimento3',
+        tip: 'Cor em inglês'
       }
     ]
   },
@@ -59,7 +77,8 @@ const data = [
         question:
           'Qual é a transação que utilizamos para realizar conferência ?',
         options: ['ZCONFLINHA', 'ZWM0012NP', 'ZWM0010N', 'LX03'],
-        answer: 'ZWM0010N'
+        answer: 'ZWM0010N',
+        tip: 'Termina com "N"'
       },
       {
         question: 'Qual é a transação que utilizamos para verificar o Chekout?',
@@ -67,20 +86,35 @@ const data = [
         answer: 'ZWM0023P'
       },
       {
-        question: 'Qual dos tipos de dado a seguir não existe em JavaScript?',
-        options: ['string', 'number', 'boolean', 'float'],
-        answer: 'float'
-      },
-      {
-        question: 'Qual dos métodos a seguir seleciona um elemento?',
-        options: ['querySelector', 'parseInt', 'sort', 'reduce'],
-        answer: 'querySelector'
-      },
-      {
         question:
-          'Qual destas propriedades da a quantidade de elementos de um array?',
-        options: ['qty', 'length', 'items', 'index'],
-        answer: 'length'
+          'Para iniciar o processo de Recuperação de Falta no coletor devemos seguir qual passo a passo?',
+        options: [
+          'Lm01/4-Processo Interno/4-Inventário',
+          'Lm01/4-Picking/3-Recuperação de Falta/1-Recup Falta',
+          'Lm01/1-Recebimento/4-Guarda/2-Conferência',
+          'Lm01/2-Separação/2-Separação'
+        ],
+        answer: 'Lm01/4-Picking/3-Recuperação de Falta/1-Recup Falta'
+      },
+      {
+        question: 'Adiconar perguntar sobre CONFERÊNCIA',
+        options: [
+          'conferência1',
+          'conferência2',
+          'conferência3',
+          'conferência4'
+        ],
+        answer: 'conferência4'
+      },
+      {
+        question: 'Adiconar perguntar sobre CONFERÊNCIA',
+        options: [
+          'conferência1',
+          'conferência2',
+          'conferência3',
+          'conferência4'
+        ],
+        answer: 'conferência2'
       }
     ]
   }
