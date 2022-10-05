@@ -5,6 +5,7 @@
 
 #welcome h2,
 #welcome p {
+  color: yellow;
   margin-bottom: 1rem;
 }
 

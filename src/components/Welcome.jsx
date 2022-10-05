@@ -10,7 +10,7 @@ const Welcome = () => {
 
   return (
     <div id="welcome">
-      <h2>Seja bem-vindo</h2>
+      <h2>Em fase de teste ...</h2>
       <p>Clique no botão abaixo para começar:</p>
       <button onClick={() => dispatch({ type: "CHANGE_STAGE" })}>
         Iniciar
@@ -22,7 +22,7 @@ const Welcome = () => {
         <a> | </a>
         <a href="https://github.com/jclaudiotomasjr" target="_blank">Jclaudiotomasjr</a>
         </div>
-        
+
         <p>© 2022 Equipe JS-Solutions</p> 
         </footer>
     </div>
