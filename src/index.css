@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #fff;
 }
 
@@ -18,9 +18,9 @@ img {
 
 button {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   cursor: pointer;
-  padding: 0.8rem 1.5rem;
+  padding: 0.8rem 1.4rem;
   background: linear-gradient(
     90deg,
     rgba(132, 53, 222, 1) 0%,

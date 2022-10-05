@@ -3,73 +3,75 @@ const data = [
     category: 'SEPARAÇÃO',
     questions: [
       {
-        question: 'Adiconar perguntar sobre SEPARAÇÃO',
+        question: '123..........Testanto',
         options: ['separação1', 'separação2', 'separação3', 'separação4'],
-        answer: 'separação1',
+        answer: 'separação10',
         tip: 'É uma tag de uma letra apenas'
       },
       {
-        question: 'Adiconar perguntar sobre SEPARAÇÃO',
+        question: '123..........Testanto',
         options: ['separação1', 'separação2', 'separação3', 'separação4'],
-        answer: 'separação1',
+        answer: 'separação10',
         tip: 'É uma tag de uma letra apenas'
       },
       {
-        question: 'Adiconar perguntar sobre SEPARAÇÃO',
+        question: '123..........Testanto',
         options: ['separação1', 'separação2', 'separação3', 'separação4'],
-        answer: 'separação1',
+        answer: 'separação10',
         tip: 'É uma tag de uma letra apenas'
       },
       {
-        question: 'Adiconar perguntar sobre SEPARAÇÃO',
+        question: '123..........Testanto',
         options: ['separação1', 'separação2', 'separação3', 'separação4'],
-        answer: 'separação1'
+        answer: 'separação10'
       },
       {
-        question: 'Adiconar perguntar sobre SEPARAÇÃO',
+        question: '123..........Testanto',
         options: ['separação1', 'separação2', 'separação3', 'separação4'],
-        answer: 'separação1'
+        answer: 'separação10'
       }
     ]
   },
+
   {
     category: 'REABASTECIMENTO',
     questions: [
       {
-        question: 'Adiconar perguntar sobre REABASTECIMENTO',
+        question: '123..........Testanto',
         options: [
           'reabastecimento1',
           'reabastecimento2',
           'reabastecimento3',
           'reabastecimento4'
         ],
-        answer: 'reabastecimento4',
+        answer: 'reabastecimento41',
         tip: 'Cor em inglês'
       },
       {
-        question: 'Adiconar perguntar sobre REABASTECIMENTO',
+        question: '123..........Testanto',
         options: [
           'reabastecimento1',
           'reabastecimento2',
           'reabastecimento3',
           'reabastecimento4'
         ],
-        answer: 'reabastecimento2',
+        answer: 'reabastecimento21',
         tip: 'Cor em inglês'
       },
       {
-        question: 'Adiconar perguntar sobre REABASTECIMENTO',
+        question: '123..........Testanto',
         options: [
           'reabastecimento1',
           'reabastecimento2',
           'reabastecimento3',
           'reabastecimento4'
         ],
-        answer: 'reabastecimento3',
+        answer: 'reabastecimento31',
         tip: 'Cor em inglês'
       }
     ]
   },
+
   {
     category: 'CONFERÊNCIA',
     questions: [
@@ -94,27 +96,27 @@ const data = [
           'Lm01//1.Recebimento//4.Guarda//2-Conferência',
           'Lm01//2.Separação/2-Separação'
         ],
-        answer: 'Lm01/4-Picking/3-Recuperação de Falta/1-Recup Falta'
+        answer: 'Lm01//4.Picking//3.Recuperação de Falta//1.Recup Falta'
       },
       {
-        question: 'Adiconar perguntar sobre CONFERÊNCIA',
+        question: '123..........Testanto',
         options: [
           'conferência1',
           'conferência2',
           'conferência3',
           'conferência4'
         ],
-        answer: 'conferência4'
+        answer: 'conferência41'
       },
       {
-        question: 'Adiconar perguntar sobre CONFERÊNCIA',
+        question: '123..........Testanto',
         options: [
           'conferência1',
           'conferência2',
           'conferência3',
           'conferência4'
         ],
-        answer: 'conferência2'
+        answer: 'conferência21'
       }
     ]
   }

@@ -16,7 +16,15 @@ const Welcome = () => {
         Iniciar
       </button>
       <img src={Quiz} alt="Início do Quiz" />
-      <footer> © 2022 JS-Solutions</footer>
+      <footer>
+        
+        <div id="p_git"><a href="https://github.com/Sergiofrm" target="_blank">Sergiofrm</a>
+        <a> | </a>
+        <a href="https://github.com/jclaudiotomasjr" target="_blank">Jclaudiotomasjr</a>
+        </div>
+        
+        <p>© 2022 Equipe JS-Solutions</p> 
+        </footer>
     </div>
     
     
