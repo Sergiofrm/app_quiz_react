@@ -1,6 +1,6 @@
 #gameover {
   text-align: center;
-  max-width: 500px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
 }
@@ -15,6 +15,6 @@
 }
 
 #gameover img {
-  margin: 2rem auto;
-  height: 200px;
+  margin: 1rem auto;
+  height: 300px;
 }

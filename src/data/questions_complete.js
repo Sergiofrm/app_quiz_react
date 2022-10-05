@@ -81,18 +81,18 @@ const data = [
         tip: 'Termina com "N"'
       },
       {
-        question: 'Qual é a transação que utilizamos para verificar o Chekout?',
+        question: 'Qual é a transação que utilizamos para acessar o Chekout?',
         options: ['ZWM0023P', 'LT15', 'ZWM0027', 'ZSD0211'],
         answer: 'ZWM0023P'
       },
       {
         question:
-          'Para iniciar o processo de Recuperação de Falta no coletor devemos seguir qual passo a passo?',
+          'Para iniciar o processo de Recuperação de Falta no coletor , devemos seguir qual passo a passo?',
         options: [
-          'Lm01/4-Processo Interno/4-Inventário',
-          'Lm01/4-Picking/3-Recuperação de Falta/1-Recup Falta',
-          'Lm01/1-Recebimento/4-Guarda/2-Conferência',
-          'Lm01/2-Separação/2-Separação'
+          'Lm01//4.Processo Interno//4.Inventário',
+          'Lm01//4.Picking//3.Recuperação de Falta//1.Recup Falta',
+          'Lm01//1.Recebimento//4.Guarda//2-Conferência',
+          'Lm01//2.Separação/2-Separação'
         ],
         answer: 'Lm01/4-Picking/3-Recuperação de Falta/1-Recup Falta'
       },
