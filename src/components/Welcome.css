@@ -13,7 +13,7 @@
   color: #8435de;
 }
 #welcome img {
-  width: 30vw;
+  width: 400px;
 }
 .footer {
   width: 100%;
@@ -34,14 +34,16 @@
   }
 
   button {
-    width: 90px;
+    width: 150px;
     display: block;
     margin: auto;
   }
 
   img {
-    width: 100%;
-    height: 240px;
-    object-fit: scale-down;
+    height: 300px;
+    width: 250px;
+
+    /* height: 290px;
+    object-fit: scale-down; */
   }
 }
