@@ -1,7 +1,18 @@
 # app_quiz_react
 
-Projeto QUIZ - React e Vite
+Projeto QUIZ
 
-# app_quiz_react
+# Intuito do Projeto
 
-Realizado GO LIVE - CD RJ
+Projeto foi criado com o objetivo de transferir novos conhecimentos e ao mesmo tempo , avaliar e divertir todos os colaboradores.
+
+# Screenshoots
+
+image.png
+image.png
+image.png
+
+# Bibliotecas
+
+-React
+-Vite
