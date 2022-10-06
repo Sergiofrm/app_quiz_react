@@ -41,7 +41,7 @@ const Question = () => {
           {currentQuestion.tip && (
             <button onClick={() => dispatch({ type: "SHOW_TIP" })}>Dica</button>
           )}
-          <button onClick={() => dispatch({ type: "REMOVE_OPTION" })}>
+          <button id ="sug" onClick={() => dispatch({ type: "REMOVE_OPTION" })}>
             Excluir uma..
           </button>
         </>

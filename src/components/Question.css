@@ -15,5 +15,27 @@
 
 #question button {
   border: 2px solid #fff;
-  margin: 1rem;
+  margin: 10px;
+}
+
+@media (max-width: 850px) {
+  #question {
+    max-width: 350px;
+    font-size: 12px;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+  h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  h1 {
+    display: none;
+  }
+
+  button {
+    justify-content: flex-start;
+  }
 }

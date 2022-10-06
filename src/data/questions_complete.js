@@ -1,3 +1,5 @@
+/* Questoes para adicionar */
+
 const data = [
   {
     category: 'SEPARAÇÃO',
