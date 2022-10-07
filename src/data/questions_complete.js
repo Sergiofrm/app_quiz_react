@@ -9,9 +9,9 @@ const data = [
           'Os sistemas FEFO (First Expire, First Out) é um termo utilizado na areá de logística para?',
         options: [
           'Método que coloca os produtos com prazo de validade mais próximo na prioridade de saída.',
-          'Controle de entrada e saída de materiais de insumos',
-          'Relacionar o tipo de produto a ser controlado ou ao tipo de apuração do valor investido no estoque',
-          'Sisteme de Gestão de Processo internos realizado pelo Líder: Anderson Germano'
+          'Controle de entrada e saída de materiais de insumos.',
+          'Relacionar o tipo de produto a ser controlado ou ao tipo de apuração do valor investido no estoque.',
+          'Sisteme de Gestão de Processo internos realizado pelo Líder: Anderson Germano.'
         ],
         answer:
           'Determinar o tipo de controle,movimentação de estoque utilizado no centro de distribuição, armazém ou almoxarifado.'
@@ -21,17 +21,6 @@ const data = [
         options: ['1.604', '1.150', '2.041', '1.323'],
         answer: '1.323',
         tip: 'Começa com o n° 1...'
-      },
-      {
-        question: 'Resolva o Problema : ',
-        options: ['separação1', 'separação2', 'separação3', 'separação4'],
-        answer: 'separação10',
-        tip: 'É uma tag de uma letra apenas'
-      },
-      {
-        question: '123..........Testanto',
-        options: ['separação1', 'separação2', 'separação3', 'separação4'],
-        answer: 'separação10'
       },
       {
         question: 'O que significa o termo UPM?',
