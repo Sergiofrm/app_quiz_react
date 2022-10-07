@@ -17,6 +17,12 @@ const data = [
           'Determinar o tipo de controle,movimentação de estoque utilizado no centro de distribuição, armazém ou almoxarifado.'
       },
       {
+        question:
+          'Nossa numeração de depósito era 210, com o WM-Grupo passará a ser ...?',
+        options: ['Permanece o dep 210', 'L10', 'W10', 'S10'],
+        answer: 'S10'
+      },
+      {
         question: 'Qual é a meta da UPM-Geral do mês de Outubro?',
         options: ['1.604', '1.150', '2.041', '1.323'],
         answer: '1.323',
@@ -52,9 +58,15 @@ const data = [
       },
       {
         question:
-          'Com base no novo sistema, qual será o novo tipo de deposito da linha de separação ("PICKING")?',
+          'Com base no novo sistema, qual será o novo tipo de deposito da linha de separação ("PICKING -ÉTICOS")?',
         options: ['103', '102', '110', '132'],
         answer: '102'
+      },
+      {
+        question:
+          'Com base no novo sistema, qual será o novo tipo de deposito da linha de separação do psico ("PICKING - CONTROLADOS")?',
+        options: ['999', '109', '107', '302'],
+        answer: '107'
       },
       {
         question:
