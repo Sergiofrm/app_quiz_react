@@ -6,23 +6,24 @@ const data = [
     questions: [
       {
         question:
-          'Os sistemas FIFO, LIFO e FEFO são termos utilizados na areá de logística para?',
+          'Os sistemas FEFO (First Expire, First Out) é um termo utilizado na areá de logística para?',
         options: [
-          'Determinar o tipo de controle,movimentação de estoque utilizado no centro de distribuição, armazém ou almoxarifado.',
-          'Controlar a entrada e saída de materiais e insumos',
-          'Relacionar o tipo de produto a ser controlado ou ao tipo de apuração do valor investido no estoque'
+          'Método que coloca os produtos com prazo de validade mais próximo na prioridade de saída.',
+          'Controle de entrada e saída de materiais de insumos',
+          'Relacionar o tipo de produto a ser controlado ou ao tipo de apuração do valor investido no estoque',
+          'Sisteme de Gestão de Processo internos realizado pelo Líder: Anderson Germano'
         ],
         answer:
           'Determinar o tipo de controle,movimentação de estoque utilizado no centro de distribuição, armazém ou almoxarifado.'
       },
       {
         question: 'Qual é a meta da UPM-Geral do mês de Outubro?',
-        options: ['1.804', '1.323', '2.041', '1.150'],
+        options: ['1.604', '1.150', '2.041', '1.323'],
         answer: '1.323',
         tip: 'Começa com o n° 1...'
       },
       {
-        question: '123..........Testanto',
+        question: 'Resolva o Problema : ',
         options: ['separação1', 'separação2', 'separação3', 'separação4'],
         answer: 'separação10',
         tip: 'É uma tag de uma letra apenas'
@@ -61,26 +62,22 @@ const data = [
           'Processo de planejar, controlar transporte, movimentação e armazenamentos.'
       },
       {
-        question: 'Com base no novo sistema o dep 10',
-        options: [
-          'reabastecimento1',
-          'reabastecimento2',
-          'reabastecimento3',
-          'reabastecimento4'
-        ],
-        answer: 'reabastecimento21',
-        tip: 'Cor em inglês'
+        question:
+          'Com base no novo sistema, qual será o novo tipo de deposito da linha de separação ("PICKING")?',
+        options: ['103', '102', '110', '132'],
+        answer: '102'
       },
       {
-        question: '123..........Testanto',
+        question:
+          'Qual será o novo tipo de deposito do pranchão , baseado no WM-Grupo?',
         options: [
-          'reabastecimento1',
-          'reabastecimento2',
-          'reabastecimento3',
-          'reabastecimento4'
+          'Nenhuma das alternativas, o novo sistema não existe posições fixas no porta pallet.',
+          '102 - 112 - 122 - 132',
+          '104 - 114 - 124 - 134',
+          'Todas as posição são pranchão.'
         ],
-        answer: 'reabastecimento31',
-        tip: 'Cor em inglês'
+        answer:
+          'Nenhuma das alternativas, o novo sistema não existe posições fixas no porta pallet.'
       }
     ]
   },
@@ -90,19 +87,20 @@ const data = [
     questions: [
       {
         question:
-          'Qual é a transação que utilizamos para realizar conferência ?',
+          'Qual é a transação que utilizamos para realizar conferência (via computador)?',
         options: ['ZCONFLINHA', 'ZWM0012NP', 'ZWM0010N', 'LX03'],
         answer: 'ZWM0010N',
         tip: 'Termina com "N"'
       },
       {
-        question: 'Qual é a transação que utilizamos para acessar o Chekout?',
+        question:
+          'Qual é a transação que utilizamos para acessar o Chekout (via computador)?',
         options: ['ZWM0023P', 'LT15', 'ZWM0027', 'ZSD0211'],
         answer: 'ZWM0023P'
       },
       {
         question:
-          'Para iniciar o processo de recuperação de falta pelo coletor , devemos seguir qual passo a passo?',
+          'Para iniciar o processo de recuperação de falta (via coletor), devemos seguir qual passo a passo?',
         options: [
           'Lm01- 4.Processo Interno -4.Inventário',
           'Lm01- 4.Picking -3.Recuperação de Falta -1.Recup Falta',
