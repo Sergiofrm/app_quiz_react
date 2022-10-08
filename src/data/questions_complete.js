@@ -94,7 +94,7 @@ const data = [
     questions: [
       {
         question:
-          'Para realizar o processo de conferência via coletor, precisamos seguir qual passo?',
+          'Para realizar o processo de conferência (por unidades) via coletor, precisamos seguir qual passo?',
         options: [
           '1.RECEBIMENTO - 4.RECEBIMENTO DT',
           '4.PICKING - 4.EMBALAGEM - 1.EMBALAGEM',
@@ -114,18 +114,30 @@ const data = [
         question:
           'Para iniciar o processo de recuperação de falta (via coletor), devemos seguir qual passo a passo?',
         options: [
-          '4.Processo Interno - 4.Inventário',
-          '4.Picking - 3.Recuperação de Falta - 1.Recup Falta',
-          '1.Recebimento - 4.Guarda - 2.Conferência',
-          '2.Separação - 2.Separação'
+          '4.PROCESSO INT - 4.INVENTÁRIO',
+          '4.PICKING - 3.RECUPERAÇÃO FALTA - 1.RECUP FALTA',
+          '1.RECEBIMENTO - 4.GUARDA - 2.CONFERÊNCIA',
+          '2.SEPARAÇÃO - 2.SEPARAÇÃO'
         ],
-        answer: '4.Picking - 3.Recuperação de Falta - 1.Recup Falta'
+        answer: '4.PICKING - 3.RECUPERAÇÃO FALTA - 1.RECUP FALTA'
       },
+
       {
         question:
           'Qual é a transação que utilizamos para acessar o Chekout (via computador)?',
         options: ['ZWM0023P', 'LT15', 'ZWM0027', 'ZSD0211'],
         answer: 'ZWM0023P'
+      },
+      {
+        question:
+          'Para realizar o processo de conferência de pedidão (Cx Fechadas) via coletor, precisamos seguir qual passo?',
+        options: [
+          '1.CHECK OUT - 2.CONFERIR',
+          '4.PROC.INTER - 4.EMBALAGEM - 1.CONFERIR',
+          '4.PICKING - 4.EMBALAGEM - 2.CONF.UNIDADE',
+          '4.PICKING - 4.EMBALAGEM - 1.EMBALAGEM'
+        ],
+        answer: '4.PICKING - 4.EMBALAGEM - 1.EMBALAGEM'
       },
       {
         question:
