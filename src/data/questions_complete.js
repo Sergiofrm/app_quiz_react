@@ -6,21 +6,32 @@ const data = [
     questions: [
       {
         question:
-          'Os sistemas FEFO (First Expire, First Out) é um termo utilizado na areá de logística para?',
+          'O sistema FEFO (First Expire, First Out) é um termo utilizado na areá de logística para...?',
         options: [
           'Método que coloca os produtos com prazo de validade mais próximo na prioridade de saída.',
           'Controle de entrada e saída de materiais de insumos.',
           'Relacionar o tipo de produto a ser controlado ou ao tipo de apuração do valor investido no estoque.',
-          'Sisteme de Gestão de Processo internos realizado pelo Líder: Anderson Germano.'
+          'Sistema de Gestão de Processo internos realizado pelo Líder: Anderson Germano.'
         ],
         answer:
-          'Determinar o tipo de controle,movimentação de estoque utilizado no centro de distribuição, armazém ou almoxarifado.'
+          'Método que coloca os produtos com prazo de validade mais próximo na prioridade de saída.'
       },
       {
         question:
-          'Nossa numeração de depósito era 210, com o WM-Grupo passará a ser ...?',
-        options: ['Permanece o dep 210', 'L10', 'W10', 'S10'],
+          'Nossa numeração de depósito no SAP-WM é 210, com o WM-Grupo passará a ser ...?',
+        options: ['Permanece o dep 210', 'LT10', 'W10', 'S10'],
         answer: 'S10'
+      },
+      {
+        question:
+          'Para realizar o processo de separação via coletor, precisamos acessar qual passo?',
+        options: [
+          '4.PICKING - 1.PICKING',
+          '5.PROC.INTERNOS - 2.CONSULTA - 1.CONSULTA SALDO',
+          '4.PICKING - 4.EMBALAGEM 2.CONF.UNIDADE',
+          '4.PICKING - 2.CHECK OUT'
+        ],
+        answer: '4.PICKING - 1.PICKING'
       },
       {
         question: 'Qual é a meta da UPM-Geral do mês de Outubro?',
@@ -29,15 +40,10 @@ const data = [
         tip: 'Começa com o n° 1...'
       },
       {
-        question: 'O que significa o termo UPM?',
-        options: [
-          'União Parque Mundial',
-          'Unidade Por Milhão',
-          'Unidade Policia Militar',
-          'Unidade Padrão Municipal'
-        ],
-        answer: 'Unidade Por Milhão',
-        tip: 'O calculo da Upm é feito em cima da quantidade vendida...'
+        question:
+          'O termo UPM significa "Unidade por Milhão", é um dos principais indicadores da logística.Seu calculo é realizado com base na (Quantidade Vendida X Quantidade de Erros e * por 1 milhão).Precisamos manter esse indicador o mais baixo possível, pois os erros de separação resultará em devolução de clientes ,má produtividade e má atendimento.',
+        options: ['V - Verdadeiro', 'F - Falso'],
+        answer: 'V - Verdadeiro'
       }
     ]
   },
@@ -88,6 +94,17 @@ const data = [
     questions: [
       {
         question:
+          'Para realizar o processo de conferência via coletor, precisamos seguir qual passo?',
+        options: [
+          '1.RECEBIMENTO - 4.RECEBIMENTO DT',
+          '4.PICKING - 4.EMBALAGEM - 1.EMBALAGEM',
+          '4.PICKING - 4.EMBALAGEM - 2.CONF.UNIDADE',
+          '4.PICKING - 2.CHECK OUT'
+        ],
+        answer: '4.PICKING - 4.EMBALAGEM - 2.CONF.UNIDADE'
+      },
+      {
+        question:
           'Qual é a transação que utilizamos para realizar conferência (via computador)?',
         options: ['ZCONFLINHA', 'ZWM0012NP', 'ZWM0010N', 'LX03'],
         answer: 'ZWM0010N',
@@ -95,20 +112,20 @@ const data = [
       },
       {
         question:
-          'Qual é a transação que utilizamos para acessar o Chekout (via computador)?',
-        options: ['ZWM0023P', 'LT15', 'ZWM0027', 'ZSD0211'],
-        answer: 'ZWM0023P'
+          'Para iniciar o processo de recuperação de falta (via coletor), devemos seguir qual passo a passo?',
+        options: [
+          '4.Processo Interno - 4.Inventário',
+          '4.Picking - 3.Recuperação de Falta - 1.Recup Falta',
+          '1.Recebimento - 4.Guarda - 2.Conferência',
+          '2.Separação - 2.Separação'
+        ],
+        answer: '4.Picking - 3.Recuperação de Falta - 1.Recup Falta'
       },
       {
         question:
-          'Para iniciar o processo de recuperação de falta (via coletor), devemos seguir qual passo a passo?',
-        options: [
-          'Lm01- 4.Processo Interno -4.Inventário',
-          'Lm01- 4.Picking -3.Recuperação de Falta -1.Recup Falta',
-          'Lm01- 1.Recebimento -4.Guarda -2-Conferência',
-          'Lm01- 2.Separação -2-Separação'
-        ],
-        answer: 'Lm01- 4.Picking -3.Recuperação de Falta -1.Recup Falta'
+          'Qual é a transação que utilizamos para acessar o Chekout (via computador)?',
+        options: ['ZWM0023P', 'LT15', 'ZWM0027', 'ZSD0211'],
+        answer: 'ZWM0023P'
       },
       {
         question:
