@@ -74,6 +74,7 @@ const data = [
         answer:
           'Processo de planejar, controlar transporte, movimentação e armazenamentos.'
       },
+
       {
         question:
           'Para realizarmos qualquer tipo de COMPRA/REABASTECIMENTO, precisamos estar logado em qual FILA?',
@@ -85,6 +86,15 @@ const data = [
           'No WM-GRUPO, o JOB do reabastecimento vai deixar de ser automático e passará a ser manual, ou seja, todos os dias o líder do reabastecimento vai precisar gerar a relação de ots para o estoque?',
         options: ['V - Verdadeiro', 'F - Falso'],
         answer: 'V - Verdadeiro'
+      },
+      {
+        question:
+          'No WM-GRUPO, para facilitar nosso processo de reabastecimento, podemos realizar a transação LT10 livremente?',
+        options: [
+          'V - Verdadeiro',
+          'F - Falso, Não devemos utilizar a transação LT10.Pois ela não grava as informações na tabela.'
+        ],
+        answer: 'F - Falso, Não devemos utilizar a transação LT10.Pois ela não grava as informações na tabela.'
       },
       {
         question:
