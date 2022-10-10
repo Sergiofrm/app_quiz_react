@@ -97,10 +97,9 @@ const data = [
           'No WM-GRUPO, para facilitar nosso processo de reabastecimento, podemos realizar a transação LT10 livremente?',
         options: [
           'V - Verdadeiro',
-          'F - Falso, Não devemos jamais utilizar a transação LT10, em processos de reabastecimento.'
+          'F - Falso, Não devemos utilizar a transação LT10.'
         ],
-        answer:
-          'F - Falso, Não devemos jamais utilizar a transação LT10, em processos de reabastecimento.'
+        answer: 'F - Falso, Não devemos utilizar a transação LT10.'
       },
       {
         question:
@@ -115,7 +114,7 @@ const data = [
       },
       {
         question:
-          'Com base no novo sistema, qual será o novo tipo de deposito da linha de separação ("PICKING -ÉTICOS")?',
+          'Com base no novo sistema, qual será o novo tipo de deposito da linha de separação ("PICKING")?',
         options: ['103', '102', '110', '132'],
         answer: '102',
         tip: 'Antiga numeração do Tipo de Deposito do Pranchão'
@@ -141,13 +140,13 @@ const data = [
         question:
           'Qual será a nova numeração do tipo de deposito do PRANCHÃO , baseado no WM-Grupo?',
         options: [
-          'Nenhuma das alternativas, o novo sistema não existirá posições fixas no porta pallet.',
+          'Nenhuma das alternativas, o novo sistema não existirá posições de pranchão.Serão considerados deposito de PICKING',
           '102 - 112 - 122 - 132',
           '104 - 114 - 124 - 134',
           'Todas as posição são pranchão.'
         ],
         answer:
-          'Nenhuma das alternativas, o novo sistema não existirá posições fixas no porta pallet.'
+          'Nenhuma das alternativas, o novo sistema não existirá posições de pranchão.Serão considerados deposito de PICKING'
       }
     ]
   },
