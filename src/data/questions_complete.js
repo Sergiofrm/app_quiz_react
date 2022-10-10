@@ -77,9 +77,14 @@ const data = [
 
       {
         question:
-          'Para realizarmos qualquer tipo de COMPRA/REABASTECIMENTO, precisamos estar logado em qual FILA?',
-        options: ['EST_01', 'REC_FALTAS', 'V_MESA', 'UNI_ÉTICOS'],
-        answer: 'UNI_ÉTICOS'
+          'Para realizarmos o REABASTECIMENTO, precisamos estar logado em qual FILA?',
+        options: [
+          'EST_01',
+          'REC_FALTAS',
+          'Não Precisamos de fila, para realizar o reabastecimento.',
+          'UNI_ÉTICOS'
+        ],
+        answer: 'Não Precisamos de fila, para realizar o reabastecimento.'
       },
       {
         question:
@@ -92,9 +97,10 @@ const data = [
           'No WM-GRUPO, para facilitar nosso processo de reabastecimento, podemos realizar a transação LT10 livremente?',
         options: [
           'V - Verdadeiro',
-          'F - Falso, Não devemos utilizar a transação LT10.Pois ela não grava as informações na tabela.'
+          'F - Falso, Não devemos jamais utilizar a transação LT10, em processos de reabastecimento.'
         ],
-        answer: 'F - Falso, Não devemos utilizar a transação LT10.Pois ela não grava as informações na tabela.'
+        answer:
+          'F - Falso, Não devemos jamais utilizar a transação LT10, em processos de reabastecimento.'
       },
       {
         question:
@@ -141,8 +147,7 @@ const data = [
           'Todas as posição são pranchão.'
         ],
         answer:
-          'Nenhuma das alternativas, o novo sistema não existirá posições fixas no porta pallet.',
-        tip: 'É uma pegadinha ...'
+          'Nenhuma das alternativas, o novo sistema não existirá posições fixas no porta pallet.'
       }
     ]
   },
