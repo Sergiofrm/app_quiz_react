@@ -10,8 +10,8 @@ const data = [
         options: [
           'Método que coloca os produtos com prazo de validade mais próximo na prioridade de saída.',
           'Controle de entrada e saída de materiais de insumos.',
-          'Relacionar o tipo de produto a ser controlado ou ao tipo de apuração do valor investido no estoque.',
-          'Sistema de Gestão de Processo internos realizado pelo Líder: Anderson Germano.'
+          'Relaciona o tipo de produto a ser controlado ou ao tipo de apuração do valor investido no estoque.',
+          'Sistema de Gestão de Processo Internos realizado pelo Líder: Anderson Germano.'
         ],
         answer:
           'Método que coloca os produtos com prazo de validade mais próximo na prioridade de saída.'
@@ -24,7 +24,19 @@ const data = [
       },
       {
         question:
-          'Para realizar o processo de separação via coletor, precisamos acessar qual passo?',
+          'Para realizar o processo de RECUPERAÇÃO de falta no S.D.A, precisamos acessar qual passo?',
+        options: [
+          '6.KNAPP - 4.PICKING KNAPP - 1.CONSULTA SALDO',
+          '5.PROCES INT - 2.CONSULTA - 1.CONSULTA SALDO',
+          '6.KNAPP - 2.PICKING KNAPP - 1.REC FALTA KNAPP',
+          '6.KNAPP - 3.PICKING - 3.CONSULTA KNAPP'
+        ],
+        answer: '6.KNAPP - 2.PICKING KNAPP - 1.REC FALTA KNAPP'
+      },
+
+      {
+        question:
+          'Para realizar o processo de SEPARAÇÃO via coletor, precisamos acessar qual passo?',
         options: [
           '4.PICKING - 1.PICKING',
           '5.PROC.INTERNOS - 2.CONSULTA - 1.CONSULTA SALDO',
@@ -64,27 +76,63 @@ const data = [
       },
       {
         question:
-          'Com base no novo sistema, qual será o novo tipo de deposito da linha de separação ("PICKING -ÉTICOS")?',
-        options: ['103', '102', '110', '132'],
-        answer: '102'
+          'Para realizarmos qualquer tipo de COMPRA/REABASTECIMENTO, precisamos estar logado em qual FILA?',
+        options: ['EST_01', 'REC_FALTAS', 'V_MESA', 'UNI_ÉTICOS'],
+        answer: 'UNI_ÉTICOS'
       },
       {
         question:
-          'Com base no novo sistema, qual será o novo tipo de deposito da linha de separação do psico ("PICKING - CONTROLADOS")?',
+          'No WM-GRUPO, o JOB do reabastecimento vai deixar de ser automático e passará a ser manual, ou seja, todos os dias o líder do reabastecimento vai precisar gerar a relação de ots para o estoque?',
+        options: ['V - Verdadeiro', 'F - Falso'],
+        answer: 'V - Verdadeiro'
+      },
+      {
+        question:
+          'Para realizarmos a DEVOLUÇÃO DE SOBRA da conferência, devemos seguir qual passo?',
+        options: [
+          '2.ARMAZENAGEM - 1.FORNECE/TRANSF',
+          '5.PROC.INTERNOS - 4.DEV.CONFERÊNCIA - 2.ARMAZENAGEM',
+          '3.REABASTECIMENTO - 2.REPOSIÇÃO',
+          '5.PROC.INTERNOS - 4.DEV.CONFERÊNCIA - 3.DEV.CONFERÊNCIA'
+        ],
+        answer: '5.PROC.INTERNOS - 4.DEV.CONFERÊNCIA - 3.DEV.CONFERÊNCIA'
+      },
+      {
+        question:
+          'Com base no novo sistema, qual será o novo tipo de deposito da linha de separação ("PICKING -ÉTICOS")?',
+        options: ['103', '102', '110', '132'],
+        answer: '102',
+        tip: 'Antiga numeração do Tipo de Deposito do Pranchão'
+      },
+      {
+        question:
+          'Com base no novo sistema, qual será o novo numero do tipo de deposito da linha de separação do psico ("PICKING - CONTROLADOS")?',
         options: ['999', '109', '107', '302'],
         answer: '107'
       },
       {
         question:
-          'Qual será o novo tipo de deposito do pranchão , baseado no WM-Grupo?',
+          'Para realizar o processo de CONFIRMAÇÃO de bin na posição, devemos seguir qual passo?',
         options: [
-          'Nenhuma das alternativas, o novo sistema não existe posições fixas no porta pallet.',
+          '3.REABASTECIMENTO - 3.ABASTECIMENTO',
+          '3.REABASTECIMENTO - 2.REPOSIÇÃO',
+          '2.ARMAZANAGEM - 1.FORNEC/TRANSF',
+          '5.PROCESSOS INTER. - 1.TRANSF.POSICAO - 3.TRANSF.BIN'
+        ],
+        answer: '3.REABASTECIMENTO - 3.ABASTECIMENTO'
+      },
+      {
+        question:
+          'Qual será a nova numeração do tipo de deposito do PRANCHÃO , baseado no WM-Grupo?',
+        options: [
+          'Nenhuma das alternativas, o novo sistema não existirá posições fixas no porta pallet.',
           '102 - 112 - 122 - 132',
           '104 - 114 - 124 - 134',
           'Todas as posição são pranchão.'
         ],
         answer:
-          'Nenhuma das alternativas, o novo sistema não existe posições fixas no porta pallet.'
+          'Nenhuma das alternativas, o novo sistema não existirá posições fixas no porta pallet.',
+        tip: 'É uma pegadinha ...'
       }
     ]
   },
@@ -94,7 +142,7 @@ const data = [
     questions: [
       {
         question:
-          'Para realizar o processo de conferência (por unidades) via coletor, precisamos seguir qual passo?',
+          'Para realizar o processo de CONFERÊNCIA (por unidades) via coletor, devemos seguir qual passo?',
         options: [
           '1.RECEBIMENTO - 4.RECEBIMENTO DT',
           '4.PICKING - 4.EMBALAGEM - 1.EMBALAGEM',
@@ -105,14 +153,20 @@ const data = [
       },
       {
         question:
-          'Qual é a transação que utilizamos para realizar conferência (via computador)?',
+          'Para realizarmos a qualquer tipo de RECUPERAÇÃO DE FALTA, precisamos estar logado em qual FILA?',
+        options: ['EST_01', 'REC_FALTAS', 'V_MESA', 'UNI_ÉTICOS'],
+        answer: 'REC_FALTAS'
+      },
+      {
+        question:
+          'Qual é a transação que é recomendada para inicar o processo de CONFERÊNCIA (via computador)?',
         options: ['ZCONFLINHA', 'ZWM0012NP', 'ZWM0010N', 'LX03'],
         answer: 'ZWM0010N',
         tip: 'Termina com "N"'
       },
       {
         question:
-          'Para iniciar o processo de recuperação de falta (via coletor), devemos seguir qual passo a passo?',
+          'Para iniciar o processo de RECUPERAÇÃO DE FALTA (via coletor), devemos seguir qual passo?',
         options: [
           '4.PROCESSO INT - 4.INVENTÁRIO',
           '4.PICKING - 3.RECUPERAÇÃO FALTA - 1.RECUP FALTA',
@@ -124,13 +178,14 @@ const data = [
 
       {
         question:
-          'Qual é a transação que utilizamos para acessar o Chekout (via computador)?',
+          'Qual é a transação que utilizamos para acessar o CHECK OUT (via computador)?',
         options: ['ZWM0023P', 'LT15', 'ZWM0027', 'ZSD0211'],
-        answer: 'ZWM0023P'
+        answer: 'ZWM0023P',
+        tip: 'Termina com "P"'
       },
       {
         question:
-          'Para realizar o processo de conferência de pedidão (Cx Fechadas) via coletor, precisamos seguir qual passo?',
+          'Para realizar o processo de CONFERÊNCIA DE PEDIDÃO (Cx Fechadas) via coletor, devemos seguir qual passo?',
         options: [
           '1.CHECK OUT - 2.CONFERIR',
           '4.PROC.INTER - 4.EMBALAGEM - 1.CONFERIR',
