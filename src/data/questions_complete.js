@@ -18,7 +18,7 @@ const data = [
       },
       {
         question:
-          'Nossa numeração de depósito no SAP-WM é 210, com o WM-Grupo passará a ser ...?',
+          'Nossa numeração de depósito no SAP-WM é 210, com o WW-GRUPO passará a ser ...?',
         options: ['Permanece o dep 210', 'LT10', 'W10', 'S10'],
         answer: 'S10'
       },
@@ -56,6 +56,12 @@ const data = [
           'O termo UPM significa "Unidade por Milhão", é um dos principais indicadores da logística.Seu calculo é realizado com base na (Quantidade Vendida X Quantidade de Erros e * por 1 milhão).Precisamos manter esse indicador o mais baixo possível, pois os erros de separação resultará em devolução de clientes ,má produtividade e má atendimento.',
         options: ['V - Verdadeiro', 'F - Falso'],
         answer: 'V - Verdadeiro'
+      },
+      {
+        question:
+          'Com o WM-GRUPO os tipos de depositos de PICKING serão os; 102	Éticos (Picking) 105	Termolábeis (Picking) 107Controlados (Picking) 111	Controle Especial (Pick)',
+        options: ['V - Verdadeiro', 'F - Falso'],
+        answer: 'V - Verdadeiro'
       }
     ]
   },
@@ -81,10 +87,10 @@ const data = [
         options: [
           'EST_01',
           'REC_FALTAS',
-          'Não Precisamos de fila, para realizar o reabastecimento.',
+          'Não precisamos de fila, para realizar o reabastecimento.',
           'UNI_ÉTICOS'
         ],
-        answer: 'Não Precisamos de fila, para realizar o reabastecimento.'
+        answer: 'Não precisamos de fila, para realizar o reabastecimento.'
       },
       {
         question:
