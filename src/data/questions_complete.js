@@ -153,7 +153,7 @@ const data = [
       },
       {
         question:
-          'Para realizarmos a qualquer tipo de RECUPERAÇÃO DE FALTA, precisamos estar logado em qual FILA?',
+          'Para realizarmos qualquer tipo de RECUPERAÇÃO DE FALTA, precisamos estar logado em qual FILA?',
         options: ['EST_01', 'REC_FALTAS', 'V_MESA', 'UNI_ÉTICOS'],
         answer: 'REC_FALTAS'
       },
