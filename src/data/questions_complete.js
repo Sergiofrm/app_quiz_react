@@ -16,6 +16,52 @@ const data = [
         answer:
           'Método que coloca os produtos com prazo de validade mais próximo na prioridade de saída.'
       },
+
+      {
+        question:
+          'Como realizar a finalização do recebimento na transação ZAGE_005?',
+        options: [
+          'Entrar na transação, informando centro/pedido e nota fiscal, e clicar na opção recebimento,',
+          'MIGO/MIRO',
+          'Não se faz a finalização pela ZAGE_005, o correto é realizar a finalização pela ZAGE_007',
+          'Não tem como realizar a finalização do recebimento, somente o setor RMS realiza essa tratativa.'
+        ],
+        answer:
+          'Não se faz a finalização pela ZAGE_005, o correto é realizar a finalização pela ZAGE_007'
+      },
+      {
+        question: 'Como funciona o simulador de cubagem?',
+        options: [
+          'Verifica a quantidade de remessas pendentes para início de uma rota prioritária.',
+          'Calcula a quantidade simulada do pedido e soma com as OTs de pedidos já criados. Este total é subtraído pelo saldo do endereço de flowrack, se este valor for maior, identificando a falta, será sugerido uma OT de reabastecimento desse produto.',
+          'Realiza a cubagem da simulação do relatório, permitindo a separação sem a necessidade de cubar pela ZWM0015P.',
+          'Calcula a quantidade do saldo do produto, e apenas faz a cubagem de remessas com saldo em estoque, deixando de cubar as demais com falta.'
+        ],
+        answer:
+          'Calcula a quantidade simulada do pedido e soma com as OTs de pedidos já criados. Este total é subtraído pelo saldo do endereço de flowrack, se este valor for maior, identificando a falta, será sugerido uma OT de reabastecimento desse produto.'
+      },
+      {
+        question: 'Qual o impacto do saldo negativo dos materiais na operação?',
+        options: [
+          'Impossibilita a criação de OTs.',
+          'Impossibilita o bloqueio ou desbloqueio do Material.',
+          'Impossibilita a finalização da conferência.',
+          'Todas as alternativas estão corretas.'
+        ],
+        answer: 'Todas as alternativas estão corretas.'
+      },
+      {
+        question:
+          'Quando temos uma posição de porta pallet cheio, e o sistema envia mais volumes para esta posição. O que fazer com os volumes e ajustes no sistema?',
+        options: [
+          'Confirmar todos os materiais via LT24, movimentando os materiais via LT10 para as posições vazias.',
+          'Confirmar todas as OTs na posição cheia, transferindo para posições vazias um a um.',
+          'No coletor, clicar na opção “Ocorrências” escolher a opção TROCA DE POSIÇÃO e movimentar os produtos para o novo endereço. Em seguida, verificar se o erro está na configuração do produto (ZWM0522) ou no endereço (LS02N).',
+          'Neste caso, será necessário a criação de uma posição adicional para armazenagem do material, confirmando pela LT22 OT por OT, até a conclusão de todas.'
+        ],
+        answer:
+          'No coletor, clicar na opção “Ocorrências” escolher a opção TROCA DE POSIÇÃO e movimentar os produtos para o novo endereço. Em seguida, verificar se o erro está na configuração do produto (ZWM0522) ou no endereço (LS02N).'
+      },
       {
         question:
           'Nossa numeração de depósito no SAP-WM é 210, com o WW-GRUPO passará a ser ...?',
@@ -44,6 +90,19 @@ const data = [
           '4.PICKING - 2.CHECK OUT'
         ],
         answer: '4.PICKING - 1.PICKING'
+      },
+
+      {
+        question:
+          'Pedido de venda solicitou 1 caixa padrão, onde no momento da separação foi informado falta, como tinha apenas essa caixa padrão no Porta Pallet, esta solicitação de separação foi para a ZWM0053P, como atender esta solicitação?',
+        options: [
+          'Fazer o cancelamento do material.',
+          'Criar OT e separar na linha como fracionado.',
+          'Movimentar o saldo do flowrack via LT10 para a posição solicitada no pedido.',
+          'Montar uma nova caixa padrão utilizando o saldo fracionado via LT01, e armazenando no endereço da solicitação do pedido.'
+        ],
+        answer:
+          'Montar uma nova caixa padrão utilizando o saldo fracionado via LT01, e armazenando no endereço da solicitação do pedido.'
       },
       {
         question: 'Qual é a meta da UPM-Geral do mês de Outubro?',
@@ -80,7 +139,24 @@ const data = [
         answer:
           'Processo de planejar, controlar transporte, movimentação e armazenamentos.'
       },
+      {
+        question:
+          'Qual transação é utilizada para imprimir/ reimprimir etiqueta para caixa Padrão?',
+        options: ['ZWM0010P.', 'ZWM0013P', 'ZWM0012P', 'ZWM0011P'],
+        answer: 'ZWM0011P'
+      },
 
+      {
+        question: 'Como fazer a mudança de lote de um material?',
+        options: [
+          'Movimentar o saldo para o depósito 999 desbloqueado, utilizando a transação MB1B com tipo de movimento Y67',
+          'Alterar o lote na MSC2N, movimentar o saldo para o 902 e confirmar a OT.',
+          'Utilizar a transação MB1B, com movimento Z03, em seguida, fazer a transferência do negativo para o 902, confirmando a OT gerada.',
+          'Movimentar o saldo para o depósito 920, utilizando a transação MB1B com tipo de movimento 311.'
+        ],
+        answer:
+          'Movimentar o saldo para o depósito 999 desbloqueado, utilizando a transação MB1B com tipo de movimento Y67'
+      },
       {
         question:
           'Para realizarmos o REABASTECIMENTO, precisamos estar logado em qual FILA?',
@@ -170,6 +246,67 @@ const data = [
           '4.PICKING - 2.CHECK OUT'
         ],
         answer: '4.PICKING - 4.EMBALAGEM - 2.CONF.UNIDADE'
+      },
+      {
+        question: 'Quando NÃO É possível fazer o cancelamento do item?',
+        options: [
+          'Quando o saldo estiver no porta pallet',
+          'Quando existir um recebimento processando o mesmo item.',
+          'Quando existir OT pendente para o item, cancelar na transação VL02N',
+          'Quando existir OT pendente para o item, ou quando o item já foi conferido totalmente.'
+        ],
+        answer:
+          'Quando existir OT pendente para o item, ou quando o item já foi conferido totalmente.'
+      },
+      {
+        question: 'Qual o significado do status C.C na VL02N na aba picking?',
+        options: [
+          'Pedido em andamento',
+          'Pedido com Nota Fiscal rejeitada, necessário fazer o estorno.',
+          'Pedido finalizado, totalmente completo',
+          'Pedido totalmente cancelado.'
+        ],
+        answer: 'Pedido finalizado, totalmente completo'
+      },
+
+      {
+        question: 'Qual a diferença entre Multi pedidos x Agrupamento',
+        options: [
+          'Multi pedidos: Pedidos de 1 unidade cubado no mesmo instante, de itens diferentes em um mesmo volume que serão desmembrados na conferência.Agrupamento: Pedidos do mesmo cliente cubado no mesmo instante, formando um grupo para a quantidade de pedidos selecionados.',
+          'Agrupamento: Pedidos de 1 unidade cubado no mesmo instante, de itens diferentes em um mesmo volume que serão desmembrados na conferência. Multi pedidos: Pedidos do mesmo cliente cubado no mesmo instante, formando um grupo para a quantidade de pedidos selecionados',
+          'Nenhuma das alterativas está correta'
+        ],
+        answer:
+          'Multi pedidos: Pedidos de 1 unidade cubado no mesmo instante, de itens diferentes em um mesmo volume que serão desmembrados na conferência.Agrupamento: Pedidos do mesmo cliente cubado no mesmo instante, formando um grupo para a quantidade de pedidos selecionados.'
+      },
+      {
+        question:
+          'Ao realizar a finalização da remessa, consequentemente já temos a nota fiscal emitida. Foi identificado que a etiqueta está rasgada/danificada. Qual transação é utilizada para realizar a reimpressão?',
+        options: ['ZWM0031P', 'ZWM0045P', 'ZWM0011P', 'ZMM0564P'],
+        answer: 'ZWM0045P'
+      },
+
+      {
+        question:
+          'No momento da finalização da conferência, apresentou as seguintes mensagens “Não estão previstos estoques negativos no tipo de depósito 218 “e “Não existe saldo para remessa XXXXXXX no 218” o que fazer nestes casos?',
+        options: [
+          'Clicar em F7, confirmando a falta da mercadoria',
+          'Sair dos programas, pois podem estar bloqueando as telas onde podemos ter concorrência do mesmo material em programas diferentes.',
+          'Avaliar o saldo dos materiais do volume, se existe bloqueio e se estão disponíveis no depósito 218. Caso positivo, desbloquear e/ou movimentar para o 218 via LT03.',
+          'Clicar em reconferir o volume após recuperação de falta.'
+        ],
+        answer:
+          'Avaliar o saldo dos materiais do volume, se existe bloqueio e se estão disponíveis no depósito 218. Caso positivo, desbloquear e/ou movimentar para o 218 via LT03.'
+      },
+      {
+        question: 'Qual a finalidade do relatório ZSD0211?',
+        options: [
+          'Verificar volumes conferidos na expedição',
+          'Verificar volumes não conferidos na expedição',
+          'Verificar total de volumes na expedição',
+          'Todas as alternativas estão corretas'
+        ],
+        answer: 'Todas as alternativas estão corretas'
       },
       {
         question:
