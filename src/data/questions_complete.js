@@ -16,7 +16,17 @@ const data = [
         answer:
           'Método que coloca os produtos com prazo de validade mais próximo na prioridade de saída.'
       },
-
+      {
+        question:
+          'Com o WM-GRUPO nossa tarefa diária é bloquear alguns tipos de depositos , antes de iniciar a operação.Quais são os eles?',
+        options: [
+          '102,103,110,200 e 300',
+          '920 e 999',
+          '902,904,920,921,922,999 e 200 (Mesa 98 e Mesa 99)',
+          'Apenas o dep 999'
+        ],
+        answer: '902,904,920,921,922,999 e 200 (Mesa 98 e Mesa 99)'
+      },
       {
         question:
           'Como realizar a finalização do recebimento na transação ZAGE_005?',
